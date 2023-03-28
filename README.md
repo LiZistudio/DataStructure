@@ -7,5 +7,5 @@ data structure by c
 
 ## Dijkstra 迪杰斯特拉单源最短路径
 
-* ！不适合求解带有负权值的单源最短路径
+* !!!注意，边上带有负权值时，Dijkstra算法并不适用。
 * 
