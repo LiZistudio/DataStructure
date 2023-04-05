@@ -3,7 +3,7 @@
 
 //二分查找
 //二分查找仅适用于有序的顺序表
-#define Initsize 10
+#define INITSIZE 10
 
 //查找表（顺序表）
 typedef struct SSTable {
@@ -36,9 +36,9 @@ int BinarySearch (const SSTable* Tab,const int key){
 
 //初始化查找表
 void InitSstable (SSTable* T) {
-    T->data = (int*)malloc(Initsize*sizeof(int));
-    T->TableLen = Initsize;
-    for (int  i = 0; i < Initsize; i++)
+    T->data = (int*)malloc(INITSIZE*sizeof(int));
+    T->TableLen = INITSIZE;
+    for (int  i = 0; i < INITSIZE; i++)
     {
         T->data[i] = i;
     }

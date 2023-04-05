@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define Maxsize 10
+#define MAXSIZE 10
 //顺序表
 typedef struct SqList{
     int* data;
@@ -22,9 +22,9 @@ int SqFind (const SqList* L,const int num) {
 
 //初始化顺序表
 void InitSqlist(SqList* L){
-    L -> data = (int*) malloc (Maxsize*sizeof(int));
-    L -> length = Maxsize;
-    for (int i = 0; i < Maxsize; i++)
+    L -> data = (int*) malloc (MAXSIZE*sizeof(int));
+    L -> length = MAXSIZE;
+    for (int i = 0; i < MAXSIZE; i++)
     {
         L->data[i] = i+1;
     }
