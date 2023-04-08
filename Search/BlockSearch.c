@@ -17,7 +17,9 @@ typedef struct BlockValue {
 }BlockValue;
 
 int main (){
-
-
-    return 0;
+	printf("hello blockSearch!\n");
+	BlockValue b1;
+	b1.data = (int*)malloc(INITSIZE*sizeof(int));
+	b1.length = INITSIZE;
+	return 0;
 }
